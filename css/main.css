@@ -248,6 +248,10 @@ footer img{
         border-bottom: #DD161B thick solid;
     }
 
+    .headerGradient{
+        background-image: linear-gradient(to left, #e26f73, #fffdfd );
+    }
+
     .navegacion{
         padding-top: 1rem;
         justify-content: space-around;
@@ -255,11 +259,59 @@ footer img{
 
     nav ul li{
         font-size: 1rem;
+        margin-right: 2px;
     }
 
     header div a{
         color: #DD161B;
         font-size: 3rem;
+    }
+
+    /* transformaciones header */
+
+    nav ul li:hover{
+        background-color:#e26f73 ;
+        transform: translate(0, 5px);
+        transition: 0.25s;
+        box-shadow: 2px 3px #DD161B;
+    }
+
+    nav ul li a:hover{
+        color: white;
+        background-color:#e26f73;
+        transition: 0.25s;
+    }
+
+    /* animacion imagenes */
+
+    main div img{
+        /* imagen del main que late */
+        animation-name: latir;
+        animation-iteration-count: infinite;
+        animation-duration: 2s;
+        animation-direction: alternate;
+    }
+
+    @keyframes latir{
+        from{
+            transform: scale(1);
+        }
+
+        to{
+            transform: scale(1.05)
+        }
+    }
+
+    /* gradiente main todos */
+
+    main{
+        background-image: linear-gradient(to right, #e26f73, #fffdfd );
+    }
+    /* gradiente footer todos */
+
+    footer{
+        background-image: linear-gradient(to left, #e26f73, #fffdfd );
+        margin-top: 0;
     }
 
     /* main del index*/
