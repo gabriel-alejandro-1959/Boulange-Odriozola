@@ -1,11 +1,13 @@
 /* RESET */
 
 *{
-    margin: 0;
+    margin: 0 auto; /* para centrar toda la pagina */
     padding: 0;
     box-sizing: border-box;
     text-decoration: none; /* asi logro que todos los enlaces en el html dejen de tener subrayado */
     list-style: none; /* asi logro que todos los enlaces en el html dejen de tener viñetas */
+    max-width: 1024px; /* para establecer el ancho máximo de toda la pagina */
+
 }
 
 /* HEADER */
@@ -18,9 +20,23 @@ header{
     font-family: 'Roboto', sans-serif;
 }
 
+nav ul li a{
+    text-decoration: none;
+}
+
 header div a{
     color: white;
+    text-decoration: none;
 }
+
+.navbar-light .navbar-brand{
+    color: white;
+}
+
+.navbar-light .navbar-toggler {
+    color: white;
+    border-color: white;
+} 
 
 .logo{
     grid-area: logo;
@@ -76,7 +92,7 @@ h1{
 main p{
     padding: 2rem 3rem 2rem 3rem;
     width:70%;
-    align-self: center;
+    align-self: center; 
 }
 
 .foto{
@@ -114,6 +130,16 @@ img{
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+
+.tituloFacturas{
+    margin-top: 1rem;
+}
+.tituloPanes{
+    margin-top: 1rem;
+}
+.tituloPasteleria{
+    margin-top: 1rem;
 }
 
 /* MAIN DE QUE USAMOS */
@@ -159,6 +185,7 @@ footer{
     margin-top: 2rem;
 }
 
+
 .contenedorFooter{
     margin: 1rem;
     color: #DD161B;
@@ -176,7 +203,7 @@ footer img{
 
 /* media queries */
 
-@media only screen and (min-width:600px){
+@media only screen and (min-width:768px){
 /* header */
     header{
         background-color: white;
@@ -185,6 +212,15 @@ footer img{
 
     header div a{
         color: #DD161B;
+    }
+
+    .navbar-light .navbar-brand{
+        color: #DD161B;
+    }
+
+    .navbar-light .navbar-toggler {
+        color: #DD161B;
+        border-color: #DD161B;
     }
 
 /* main de nuestros productos */ 
@@ -238,7 +274,7 @@ footer img{
     }
 }
 
-@media only screen and (min-width:1024px){
+@media only screen and (min-width:992px){
     /* header */
     header{
         display:flex;
@@ -248,10 +284,6 @@ footer img{
         border-bottom: #DD161B thick solid;
     }
 
-    .headerGradient{
-        background-image: linear-gradient(to left, #e26f73, #fffdfd );
-    }
-
     .navegacion{
         padding-top: 1rem;
         justify-content: space-around;
@@ -259,33 +291,40 @@ footer img{
 
     nav ul li{
         font-size: 1rem;
-        margin-right: 2px;
     }
-
+    
     header div a{
         color: #DD161B;
         font-size: 3rem;
     }
 
-    /* transformaciones header */
+    .navbar-light .navbar-brand{
+        color: #DD161B;
+    }
 
-    nav ul li:hover{
-        background-color:#e26f73 ;
+     /* transformaciones header */
+
+     nav ul li:hover{
+        background-color: #DD161B;
         transform: translate(0, 5px);
         transition: 0.25s;
-        box-shadow: 2px 3px #DD161B;
+        border: black solid 2px;
     }
+
+    .navbar-light:hover .navbar-nav:hover .nav-link.active:hover, .navbar-light:hover .navbar-nav:hover .show>.nav-link:hover{
+        color: white;
+        transition: 0.25s;
+    }
+
 
     nav ul li a:hover{
         color: white;
-        background-color:#e26f73;
         transition: 0.25s;
     }
 
     /* animacion imagenes */
 
     main div img{
-        /* imagen del main que late */
         animation-name: latir;
         animation-iteration-count: infinite;
         animation-duration: 2s;
@@ -302,18 +341,13 @@ footer img{
         }
     }
 
-    /* gradiente main todos */
-
-    main{
-        background-image: linear-gradient(to right, #e26f73, #fffdfd );
+    /* main general */
+    main p{
+        padding: 1rem 2rem 1rem 2rem;
+        width:80%;
+        align-self: center; 
     }
-    /* gradiente footer todos */
-
-    footer{
-        background-image: linear-gradient(to left, #e26f73, #fffdfd );
-        margin-top: 0;
-    }
-
+   
     /* main del index*/
 
     .contenedorGrid{
@@ -321,8 +355,7 @@ footer img{
         grid-template-areas: "titulo titulo"
                              "parrafo foto";
         grid-template-columns: 1fr 1fr;
-        justify-items: center;
-        align-items: center;
+        align-items: center; 
     }
 
     .titulo{
@@ -331,14 +364,14 @@ footer img{
 
     .parrafo{
         grid-area: parrafo;
-        justify-self: center;
         color: white;
         background-color: #DD161B;
+        line-height: 2rem;
     }
 
     .foto{
         grid-area: foto;
-        justify-self: center;
+        justify-self: start;
     }
 
     main img{
@@ -371,12 +404,13 @@ footer img{
         padding-top: 3rem;
         padding-bottom: 2rem;
         font-size: 1.75rem;
+        margin-top: 0.5rem;
     }
     .parrafoPanes{
         grid-area: parrafoPanes;
-        justify-self: end;
         color: white;
         background-color: #DD161B;
+        line-height: 2rem;
     }
     .fotoPan{
         grid-area: fotoPan;
@@ -390,6 +424,7 @@ footer img{
         padding-top: 3rem;
         padding-bottom: 2rem;
         font-size: 1.75rem;
+        margin-top: 0.5rem;
     }
     .fotoFacturas{
         grid-area: fotoFacturas;
@@ -400,6 +435,7 @@ footer img{
         justify-self: start;
         color: white;
         background-color: #DD161B;
+        line-height: 2rem;
     }
     .tituloPasteleria{
         grid-area: tituloPasteleria;
@@ -409,12 +445,14 @@ footer img{
         padding-top: 3rem;
         padding-bottom: 2rem;
         font-size: 1.75rem;
+        margin-top: 0.5rem;
     }
     .parrafoPasteleria{
         grid-area: parrafoPasteleria;
         justify-self: end;
         color: white;
         background-color: #DD161B;
+        line-height: 2rem;
     }
     .fotoPasteleria{
         grid-area: fotoPasteleria;
@@ -436,26 +474,33 @@ footer img{
         justify-self: center;
         margin-bottom: 2rem;
     }
+    
     .parrafoQuienes{
         grid-area: parrafoQuienes;
         color: white;
         background-color: #DD161B;
         justify-self: end;
+        line-height: 2rem;
     }
+    
     .fotoQuienes{
         grid-area: fotoQuienes;
     }
+    
     .videoQuienes{
         grid-area: videoQuienes;
+        margin-top: 1rem;
     }
     
     .fotoEquipo{
         width: 80%;
-        margin-bottom: 1rem;
+        vertical-align: middle;
     }
 
     .videoEquipo{
-        width:50%;
+        
+        vertical-align: middle;
+        padding-bottom: 0;
     }
 
     /* main de que usamos */
@@ -478,6 +523,7 @@ footer img{
         color: white;
         background-color: #DD161B;
         justify-self: end;
+        line-height: 1.5rem;
     }
     .fotoUsamos{
         grid-area: fotoUsamos;
@@ -486,6 +532,25 @@ footer img{
     .fotoIngrediente{
         width: 80%;
         margin-bottom: none;
+    }
+
+    /* footer */
+
+    .abajoFooter{/* para que el footer siempre quede abajo en las paginas que no tienen mucho contenido */
+        position: relative;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+    
+    footer img{
+        width:3rem;
+        border-radius: 10px;
+    }
+    
+    .imagenesFooter{
+        display: flex;
+        justify-content: space-evenly;
     }
     
 }
