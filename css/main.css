@@ -1,558 +1,374 @@
-/* RESET */
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  max-width: 1024px; }
 
-*{
-    margin: 0 auto; /* para centrar toda la pagina */
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none; /* asi logro que todos los enlaces en el html dejen de tener subrayado */
-    list-style: none; /* asi logro que todos los enlaces en el html dejen de tener viñetas */
-    max-width: 1024px; /* para establecer el ancho máximo de toda la pagina */
+main {
+  font-family: 'Roboto', sans-serif; }
+  main div h1 {
+    text-align: center;
+    width: 70%;
+    align-self: center;
+    padding: 2rem; }
+  main div .parrafo p {
+    padding: 2rem 3rem 2rem 3rem;
+    width: 70%;
+    align-self: center; }
+  main div .foto {
+    text-align: center;
+    margin-bottom: 1rem; }
+    main div .foto img {
+      width: 70%;
+      border-radius: 10px; }
 
-}
+header {
+  display: grid;
+  grid-template-areas: "logo" "navegacion";
+  background-color: #DD161B;
+  font-family: 'Roboto', sans-serif; }
 
-/* HEADER */
+nav ul li a {
+  text-decoration: none; }
 
-header{
-    display:grid;
-    grid-template-areas: "logo"
-                         "navegacion";
-    background-color: #DD161B;
-    font-family: 'Roboto', sans-serif;
-}
+header div a {
+  color: white;
+  text-decoration: none; }
 
-nav ul li a{
-    text-decoration: none;
-}
-
-header div a{
-    color: white;
-    text-decoration: none;
-}
-
-.navbar-light .navbar-brand{
-    color: white;
-}
+.navbar-light .navbar-brand {
+  color: white; }
 
 .navbar-light .navbar-toggler {
-    color: white;
-    border-color: white;
-} 
+  color: white;
+  border-color: white; }
 
-.logo{
-    grid-area: logo;
-    font-size: 3rem;
-    font-family: 'Source Serif Pro', serif;
-    text-align: center;
-    margin: 1rem;
-}
+.logo {
+  grid-area: logo;
+  font-size: 3rem;
+  font-family: 'Source Serif Pro', serif;
+  text-align: center;
+  margin: 1rem; }
 
-.navegacion{
-    grid-area: navegacion;
-    align-items: center;
-}
+.navegacion {
+  grid-area: navegacion;
+  align-items: center; }
 
-nav ul{
-    display:flex;
-    justify-content: space-around;
-    margin-bottom: 1rem;
-}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem; }
 
-nav ul li{
-    background-color: white;
-    padding: 0.3rem;
-    border-radius: 10px;
-    align-self: center;
-    text-align: center;
-}
+nav ul li {
+  background-color: white;
+  padding: 0.3rem;
+  border-radius: 10px;
+  align-self: center;
+  text-align: center; }
 
-nav ul li a{
-    color: #DD161B;
-    align-items: center;
-}
-
-/* MAIN DEL INDEX */
-
-main{
-    font-family: 'Roboto', sans-serif;
-}
-
-.contenedor{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-h1{
-    text-align: center;
-    width: 70%;
-    align-self: center;
-    padding: 2rem;
-}
-
-main p{
-    padding: 2rem 3rem 2rem 3rem;
-    width:70%;
-    align-self: center; 
-}
-
-.foto{
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-img{
-    width: 70%;
-    border-radius: 10px;
-}
+nav ul li a {
+  color: #DD161B;
+  align-items: center; }
 
 /* MAIN DE QUIENES SOMOS */
+.quienesSomos {
+  display: flex;
+  flex-direction: column;
+  text-align: center; }
 
-.quienesSomos{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
+.fotoEquipo {
+  width: 70%; }
 
-.fotoEquipo{
-    width: 70%;
-}
-
-.videoEquipo{
-    width: auto;
-    padding-bottom: 1rem;
-}
-
-
+.videoEquipo {
+  width: auto;
+  padding-bottom: 1rem; }
 
 /* MAIN DE NUESTROS PRODUCTOS */
+.mainGrid {
+  display: flex;
+  flex-direction: column;
+  text-align: center; }
 
-.mainGrid{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
+.tituloFacturas {
+  margin-top: 1rem; }
 
-.tituloFacturas{
-    margin-top: 1rem;
-}
-.tituloPanes{
-    margin-top: 1rem;
-}
-.tituloPasteleria{
-    margin-top: 1rem;
-}
+.tituloPanes {
+  margin-top: 1rem; }
+
+.tituloPasteleria {
+  margin-top: 1rem; }
+
+.fotoProducto {
+  width: 60%; }
 
 /* MAIN DE QUE USAMOS */
+.queUsamos {
+  display: flex;
+  flex-direction: column;
+  text-align: center; }
 
-.queUsamos{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.fotoIngrediente{
-    width: 70%;
-}
+.fotoIngrediente {
+  width: 70%; }
 
 /* MAIN DE CONTACTO */
+.boton {
+  margin: 15px;
+  border-color: #DD161B;
+  color: #DD161B; }
 
-.boton{
-    margin:15px;
-    border-color: #DD161B;
-    color: #DD161B;
-}
+.widthDiv {
+  width: 400px;
+  text-align: center; }
 
-.widthDiv{
-    width: 400px;
-    text-align: center;
-}
+.centrado {
+  text-align: center; }
 
-.centrado{
-    text-align: center;
-}
-
-.contacto{
-    display: flex;
-    flex-direction: column;
-}
-
+.contacto {
+  display: flex;
+  flex-direction: column; }
 
 /* FOOTER*/
+footer {
+  font-family: 'Roboto', sans-serif;
+  border-top: thin solid #DD161B;
+  margin-top: 2rem; }
 
-footer{
-    font-family: 'Roboto', sans-serif;
-    border-top: thin solid #DD161B;
-    margin-top: 2rem;
-}
+.contenedorFooter {
+  margin: 1rem;
+  color: #DD161B; }
 
+footer img {
+  width: 3rem;
+  border-radius: 10px; }
 
-.contenedorFooter{
-    margin: 1rem;
-    color: #DD161B;
-}
-
-footer img{
-    width:3rem;
-    border-radius: 10px;
-}
-
-.imagenesFooter{
-    display: flex;
-    justify-content: space-around;
-}
+.imagenesFooter {
+  display: flex;
+  justify-content: space-around; }
 
 /* media queries */
-
-@media only screen and (min-width:768px){
-/* header */
-    header{
-        background-color: white;
-        border-bottom: #DD161B thick solid;
-    }
-
-    header div a{
-        color: #DD161B;
-    }
-
-    .navbar-light .navbar-brand{
-        color: #DD161B;
-    }
-
-    .navbar-light .navbar-toggler {
-        color: #DD161B;
-        border-color: #DD161B;
-    }
-
-/* main de nuestros productos */ 
-
-.fotoPan,
-.fotoFacturas,
-.fotoPasteleria{
+@media only screen and (min-width: 768px) {
+  /* header */
+  header {
+    background-color: white;
+    border-bottom: #DD161B thick solid; }
+  header div a {
+    color: #DD161B; }
+  .navbar-light .navbar-brand {
+    color: #DD161B; }
+  .navbar-light .navbar-toggler {
+    color: #DD161B;
+    border-color: #DD161B; }
+  /* main de nuestros productos */
+  .fotoPan,
+  .fotoFacturas,
+  .fotoPasteleria {
     padding-bottom: 1rem;
     margin-bottom: 1rem;
     margin-left: 2rem;
     margin-right: 2rem;
-    border-bottom: thin solid #DD161B;
-}
-
-/* main de quienes somos */
-
-.fotoUsamos{
-    margin-bottom: 1rem;
-}
-
-/* footer */
-    footer{
-        display:grid;
-        grid-template-areas: "footerBorde imagenesFooter";
-        grid-template-columns: 3fr 1fr;
-    }
-
-    .footerBorde{
-        grid-area: footerBorde;
-        display:flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .imagenesFooter{
+    border-bottom: thin solid #DD161B; }
+  .fotoProducto {
+    width: 80%; }
+  /* main de quienes somos */
+  .fotoUsamos {
+    margin-bottom: 1rem; }
+  footer {
+    display: grid;
+    grid-template-areas: "footerBorde"  "imagenesFooter";
+    grid-template-columns: 3fr 1fr; }
+    footer .footerBorde {
+      grid-area: footerBorde;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center; }
+      footer .footerBorde .contenedorFooter .subtituloFooter {
+        font-size: 1rem; }
+      footer .footerBorde .contenedorFooter p {
+        font-size: 0.75rem; }
+      footer .footerBorde .contenedorFooter .imagenesFooter {
         grid-area: imagenesFooter;
-        align-items: center;
-    }
+        align-items: center; }
+        footer .footerBorde .contenedorFooter .imagenesFooter img {
+          border-radius: 10px; } }
 
-    footer img{
-        border-radius: 10px;
-    }
-
-    .subtituloFooter{
-        font-size:1rem;
-    }
-
-    footer p{
-        font-size: 0.75rem;
-    }
-}
-
-@media only screen and (min-width:992px){
-    /* header */
-    header{
-        display:flex;
-        align-items: center;
-        justify-content: space-around;
-        background-color: white;
-        border-bottom: #DD161B thick solid;
-    }
-
-    .navegacion{
-        padding-top: 1rem;
-        justify-content: space-around;
-    }
-
-    nav ul li{
-        font-size: 1rem;
-    }
-    
-    header div a{
-        color: #DD161B;
-        font-size: 3rem;
-    }
-
-    .navbar-light .navbar-brand{
-        color: #DD161B;
-    }
-
-     /* transformaciones header */
-
-     nav ul li:hover{
-        background-color: #DD161B;
-        transform: translate(0, 5px);
-        transition: 0.25s;
-        border: black solid 2px;
-    }
-
-    .navbar-light:hover .navbar-nav:hover .nav-link.active:hover, .navbar-light:hover .navbar-nav:hover .show>.nav-link:hover{
-        color: white;
-        transition: 0.25s;
-    }
-
-
-    nav ul li a:hover{
-        color: white;
-        transition: 0.25s;
-    }
-
-    /* animacion imagenes */
-
-    main div img{
-        animation-name: latir;
-        animation-iteration-count: infinite;
-        animation-duration: 2s;
-        animation-direction: alternate;
-    }
-
-    @keyframes latir{
-        from{
-            transform: scale(1);
-        }
-
-        to{
-            transform: scale(1.05)
-        }
-    }
-
-    /* main general */
-    main p{
-        padding: 1rem 2rem 1rem 2rem;
-        width:80%;
-        align-self: center; 
-    }
-   
-    /* main del index*/
-
-    .contenedorGrid{
-        display: grid;
-        grid-template-areas: "titulo titulo"
-                             "parrafo foto";
-        grid-template-columns: 1fr 1fr;
-        align-items: center; 
-    }
-
-    .titulo{
-        grid-area: titulo;
-    }
-
-    .parrafo{
-        grid-area: parrafo;
-        color: white;
-        background-color: #DD161B;
-        line-height: 2rem;
-    }
-
-    .foto{
-        grid-area: foto;
-        justify-self: start;
-    }
-
-    main img{
-        width: 80%;
-    }
-
-    /* main de nuestros productos */
-
-    .mainGrid{
-        display: grid;
-        grid-template-areas: "tituloProductos tituloProductos"
-                             "tituloPanes tituloPanes"
-                             "parrafoPanes fotoPan"
-                             "tituloFacturas tituloFacturas"
-                             "fotoFacturas parrafoFacturas"
-                             "tituloPasteleria tituloPasteleria"
-                             "parrafoPasteleria fotoPasteleria";
-        align-items: center;
-    }
-
-    .tituloProductos{
-        grid-area: tituloProductos;
-        justify-self: center;
-    }
-    .tituloPanes{
-        grid-area: tituloPanes;
-        border-top: thin solid #DD161B;
-        margin-left: 3rem;
-        margin-right: 3rem;
-        padding-top: 3rem;
-        padding-bottom: 2rem;
-        font-size: 1.75rem;
-        margin-top: 0.5rem;
-    }
-    .parrafoPanes{
-        grid-area: parrafoPanes;
-        color: white;
-        background-color: #DD161B;
-        line-height: 2rem;
-    }
-    .fotoPan{
-        grid-area: fotoPan;
-        border-bottom: none;
-    }
-    .tituloFacturas{
-        grid-area: tituloFacturas;
-        border-top: thin solid #DD161B;
-        margin-left: 3rem;
-        margin-right: 3rem;
-        padding-top: 3rem;
-        padding-bottom: 2rem;
-        font-size: 1.75rem;
-        margin-top: 0.5rem;
-    }
-    .fotoFacturas{
-        grid-area: fotoFacturas;
-        border-bottom: none;
-    }
-    .parrafoFacturas{
-        grid-area: parrafoFacturas;
-        justify-self: start;
-        color: white;
-        background-color: #DD161B;
-        line-height: 2rem;
-    }
-    .tituloPasteleria{
-        grid-area: tituloPasteleria;
-        border-top: thin solid #DD161B;
-        margin-left: 3rem;
-        margin-right: 3rem;
-        padding-top: 3rem;
-        padding-bottom: 2rem;
-        font-size: 1.75rem;
-        margin-top: 0.5rem;
-    }
-    .parrafoPasteleria{
-        grid-area: parrafoPasteleria;
-        justify-self: end;
-        color: white;
-        background-color: #DD161B;
-        line-height: 2rem;
-    }
-    .fotoPasteleria{
-        grid-area: fotoPasteleria;
-        border-bottom: none;
-    }
-
-    /* main de quienes somos */
-
-    .quienesSomos{
-        display:grid;
-        grid-template-areas: "tituloQuienes tituloQuienes"
-                             "parrafoQuienes fotoQuienes"
-                             "videoQuienes videoQuienes";
-        align-items: center;
-    }
-
-    .tituloQuienes{
-        grid-area: tituloQuienes;
-        justify-self: center;
-        margin-bottom: 2rem;
-    }
-    
-    .parrafoQuienes{
-        grid-area: parrafoQuienes;
-        color: white;
-        background-color: #DD161B;
-        justify-self: end;
-        line-height: 2rem;
-    }
-    
-    .fotoQuienes{
-        grid-area: fotoQuienes;
-    }
-    
-    .videoQuienes{
-        grid-area: videoQuienes;
-        margin-top: 1rem;
-    }
-    
-    .fotoEquipo{
-        width: 80%;
-        vertical-align: middle;
-    }
-
-    .videoEquipo{
-        
-        vertical-align: middle;
-        padding-bottom: 0;
-    }
-
-    /* main de que usamos */
-
-    .queUsamos{
-        display: grid;
-        grid-template-areas: "tituloUsamos tituloUsamos"
-                             "parrafoUsamos fotoUsamos";
-        align-items: center;
-        justify-items: center;
-        grid-template-columns: 1fr 1fr;
-    }
-    
-    .tituloUsamos{
-        grid-area: tituloUsamos;
-        justify-self: center;
-    }
-    .parrafoUsamos{
-        grid-area: parrafoUsamos;
-        color: white;
-        background-color: #DD161B;
-        justify-self: end;
-        line-height: 1.5rem;
-    }
-    .fotoUsamos{
-        grid-area: fotoUsamos;
-    }
-
-    .fotoIngrediente{
-        width: 80%;
-        margin-bottom: none;
-    }
-
-    /* footer */
-
-    .abajoFooter{/* para que el footer siempre quede abajo en las paginas que no tienen mucho contenido */
-        position: relative;
-        bottom: 0;
-        right: 0;
-        left: 0;
-    }
-    
-    footer img{
-        width:3rem;
-        border-radius: 10px;
-    }
-    
-    .imagenesFooter{
-        display: flex;
-        justify-content: space-evenly;
-    }
-    
-}
-
-
+@media only screen and (min-width: 992px) {
+  /* header */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    border-bottom: #DD161B thick solid; }
+  .navegacion {
+    padding-top: 1rem;
+    justify-content: space-around; }
+  nav ul li {
+    font-size: 1rem; }
+  header div a {
+    color: #DD161B;
+    font-size: 3rem; }
+  .navbar-light .navbar-brand {
+    color: #DD161B; }
+  /* transformaciones header */
+  nav ul li:hover {
+    background-color: #DD161B;
+    transform: translate(0, 5px);
+    transition: 0.25s;
+    border: black solid 2px; }
+  .navbar-light:hover .navbar-nav:hover .nav-link.active:hover, .navbar-light:hover .navbar-nav:hover .show > .nav-link:hover {
+    color: white;
+    transition: 0.25s; }
+  nav ul li a:hover {
+    color: white;
+    transition: 0.25s; }
+  /* animacion imagenes */
+  main div img {
+    animation-name: latir;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-direction: alternate; }
+  @keyframes latir {
+    from {
+      transform: scale(1); }
+    to {
+      transform: scale(1.05); } }
+  /* main general */
+  main p {
+    padding: 1rem 2rem 1rem 2rem;
+    width: 80%;
+    align-self: center; }
+  /* main del index*/
+  .contenedorGrid {
+    display: grid;
+    grid-template-areas: "titulo titulo" "parrafo foto";
+    grid-template-columns: 1fr 1fr;
+    align-items: center; }
+  .titulo {
+    grid-area: titulo; }
+  .parrafo {
+    grid-area: parrafo;
+    color: white;
+    background-color: #DD161B;
+    line-height: 2rem; }
+  .foto {
+    grid-area: foto;
+    justify-self: start; }
+  main img {
+    width: 80%; }
+  /* main de nuestros productos */
+  .mainGrid {
+    display: grid;
+    grid-template-areas: "tituloProductos tituloProductos" "tituloPanes tituloPanes" "parrafoPanes fotoPan" "tituloFacturas tituloFacturas" "fotoFacturas parrafoFacturas" "tituloPasteleria tituloPasteleria" "parrafoPasteleria fotoPasteleria";
+    align-items: center; }
+  .tituloProductos {
+    grid-area: tituloProductos;
+    justify-self: center; }
+  .tituloPanes {
+    grid-area: tituloPanes;
+    border-top: thin solid #DD161B;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    font-size: 1.75rem;
+    margin-top: 0.5rem; }
+  .parrafoPanes {
+    grid-area: parrafoPanes;
+    color: white;
+    background-color: #DD161B;
+    line-height: 2rem; }
+  .fotoPan {
+    grid-area: fotoPan;
+    border-bottom: none; }
+  .tituloFacturas {
+    grid-area: tituloFacturas;
+    border-top: thin solid #DD161B;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    font-size: 1.75rem;
+    margin-top: 0.5rem; }
+  .fotoFacturas {
+    grid-area: fotoFacturas;
+    border-bottom: none; }
+  .parrafoFacturas {
+    grid-area: parrafoFacturas;
+    justify-self: start;
+    color: white;
+    background-color: #DD161B;
+    line-height: 2rem; }
+  .tituloPasteleria {
+    grid-area: tituloPasteleria;
+    border-top: thin solid #DD161B;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    font-size: 1.75rem;
+    margin-top: 0.5rem; }
+  .parrafoPasteleria {
+    grid-area: parrafoPasteleria;
+    justify-self: end;
+    color: white;
+    background-color: #DD161B;
+    line-height: 2rem; }
+  .fotoPasteleria {
+    grid-area: fotoPasteleria;
+    border-bottom: none; }
+  /* main de quienes somos */
+  .quienesSomos {
+    display: grid;
+    grid-template-areas: "tituloQuienes tituloQuienes" "parrafoQuienes fotoQuienes" "videoQuienes videoQuienes";
+    align-items: center; }
+  .tituloQuienes {
+    grid-area: tituloQuienes;
+    justify-self: center;
+    margin-bottom: 2rem; }
+  .parrafoQuienes {
+    grid-area: parrafoQuienes;
+    color: white;
+    background-color: #DD161B;
+    justify-self: end;
+    line-height: 2rem; }
+  .fotoQuienes {
+    grid-area: fotoQuienes; }
+  .videoQuienes {
+    grid-area: videoQuienes;
+    margin-top: 1rem; }
+  .fotoEquipo {
+    width: 80%;
+    vertical-align: middle; }
+  .videoEquipo {
+    vertical-align: middle;
+    padding-bottom: 0; }
+  /* main de que usamos */
+  .queUsamos {
+    display: grid;
+    grid-template-areas: "tituloUsamos tituloUsamos" "parrafoUsamos fotoUsamos";
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr; }
+  .tituloUsamos {
+    grid-area: tituloUsamos;
+    justify-self: center; }
+  .parrafoUsamos {
+    grid-area: parrafoUsamos;
+    color: white;
+    background-color: #DD161B;
+    justify-self: end;
+    line-height: 1.5rem; }
+  .fotoUsamos {
+    grid-area: fotoUsamos; }
+  .fotoIngrediente {
+    width: 80%;
+    margin-bottom: none; }
+  /* footer */
+  footer img {
+    width: 3rem;
+    border-radius: 10px; }
+  .imagenesFooter {
+    display: flex;
+    justify-content: space-evenly; } }

@@ -1,0 +1,26 @@
+main{
+    font-family: 'Roboto', sans-serif;
+    div{
+        h1{
+            text-align: center;
+             width: 70%;
+            align-self: center;
+            padding: 2rem;
+        }
+        .parrafo{
+            p{
+                padding: 2rem 3rem 2rem 3rem;
+                width:70%;
+                align-self: center; 
+            }
+        }
+        .foto{
+            text-align: center;
+            margin-bottom: 1rem;
+            img{
+                width: 70%;
+                border-radius: 10px;
+            }
+        }
+    }
+}
