@@ -4,7 +4,30 @@
 @import "layout/mainIndex";
 
 
-//header
+//mixin
+@mixin flexbox-column{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+//map
+
+$medidas-992px: (
+    margin-left: 3rem,
+    margin-right: 3rem,
+    padding-top: 3rem,
+    padding-bottom: 2rem
+);
+
+//extend
+
+%borde{
+    border-bottom: thin solid $color-principal;
+    margin-bottom: 1rem;
+}
+
+/* header */
 
 header{
     display:grid;
@@ -73,13 +96,12 @@ nav ul li a{
 /* MAIN DE QUIENES SOMOS */
 
 .quienesSomos{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+    @include flexbox-column()
 }
 
 .fotoEquipo{
     width: 70%;
+    @extend %borde;
 }
 
 .videoEquipo{
@@ -90,19 +112,20 @@ nav ul li a{
 /* MAIN DE NUESTROS PRODUCTOS */
 
 .mainGrid{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+    @include flexbox-column()
 }
 
 .tituloFacturas{
     margin-top: 1rem;
+    @extend %borde;
 }
 .tituloPanes{
     margin-top: 1rem;
+    @extend %borde;
 }
 .tituloPasteleria{
     margin-top: 1rem;
+    @extend %borde;
 }
 
 .fotoProducto{
@@ -112,9 +135,7 @@ nav ul li a{
 /* MAIN DE QUE USAMOS */
 
 .queUsamos{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+    @include flexbox-column()
 }
 
 .fotoIngrediente{
@@ -292,7 +313,7 @@ footer img{
 
     /* animacion imagenes */
 
-    main div img{
+    main section img{
         animation-name: latir;
         animation-iteration-count: infinite;
         animation-duration: 2s;
@@ -339,7 +360,7 @@ footer img{
 
     .foto{
         grid-area: foto;
-        justify-self: start;
+        justify-self: end;
     }
 
     main img{
@@ -367,10 +388,10 @@ footer img{
     .tituloPanes{
         grid-area: tituloPanes;
         border-top: thin solid $color-principal;
-        margin-left: 3rem;
-        margin-right: 3rem;
-        padding-top: 3rem;
-        padding-bottom: 2rem;
+        margin-left: map-get($map: $medidas-992px, $key:margin-left);
+        margin-right: map-get($map: $medidas-992px, $key:margin-right);
+        padding-top: map-get($map: $medidas-992px, $key:padding-top);
+        padding-bottom: map-get($map: $medidas-992px, $key:padding-bottom);
         font-size: 1.75rem;
         margin-top: 0.5rem;
     }

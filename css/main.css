@@ -8,22 +8,27 @@
 
 main {
   font-family: 'Roboto', sans-serif; }
-  main div h1 {
+  main section h1 {
     text-align: center;
     width: 70%;
     align-self: center;
     padding: 2rem; }
-  main div .parrafo p {
+  main section .parrafo p {
     padding: 2rem 3rem 2rem 3rem;
     width: 70%;
     align-self: center; }
-  main div .foto {
+  main section .foto {
     text-align: center;
     margin-bottom: 1rem; }
-    main div .foto img {
+    main section .foto img {
       width: 70%;
       border-radius: 10px; }
 
+.fotoEquipo, .tituloFacturas, .tituloPanes, .tituloPasteleria {
+  border-bottom: thin solid #DD161B;
+  margin-bottom: 1rem; }
+
+/* header */
 header {
   display: grid;
   grid-template-areas: "logo" "navegacion";
@@ -224,7 +229,7 @@ footer img {
     color: white;
     transition: 0.25s; }
   /* animacion imagenes */
-  main div img {
+  main section img {
     animation-name: latir;
     animation-iteration-count: infinite;
     animation-duration: 2s;
@@ -254,7 +259,7 @@ footer img {
     line-height: 2rem; }
   .foto {
     grid-area: foto;
-    justify-self: start; }
+    justify-self: end; }
   main img {
     width: 80%; }
   /* main de nuestros productos */
