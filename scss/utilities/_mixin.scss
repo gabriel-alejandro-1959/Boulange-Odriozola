@@ -1,0 +1,48 @@
+@import "../utilities/variables";
+
+@mixin h2Titulos{
+    font-size: $h2Titulo;
+    color: $colorPrincipal;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+@mixin parrafosGral{
+    padding: 1rem;
+    color: white;
+}
+
+@mixin cajaParrafosGral{
+    border-radius: 1rem;
+    margin: 1rem;
+    text-align: center;
+    background-color: $colorPrincipal;
+}
+
+@mixin imagenesGral{
+    border-radius: 1rem;
+    width: 80vw;
+}
+
+@mixin cajaImagenesGral{
+    margin: 1rem;
+    text-align: center; 
+}
+
+@mixin footerArticle{
+    text-align: center;
+    width: 33vw;
+}
+
+@mixin hoverEnlace{
+    .navItem{
+       background-color: white; 
+       transform: translate(0, 5px);
+       transition: 0.25s;
+    }
+    
+    color: $colorPrincipal;
+    
+}
+

@@ -10,10 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@1,600&display=swap" rel="stylesheet">
     <!-- link animate.style -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -22,72 +19,87 @@
 </head>
 <body>
    <header>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-          <a class="logo animate__animated animate__rubberBand navbar-brand" href="index.html">Boulange</a>
+    <nav class="container-fluid navbar-expand-lg navbar-light fixed-lg-top">
+        <div class="row">
+          <a class="text-center animate__animated animate__rubberBand navbar-brand" href="index.html"><img class="navLogo" src="images/2.png" alt=""></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active fs-6 text" aria-current="page" href="index.html">Home</a>
+              <li class="nav-item navItem">
+                <a class="enlacesNav nav-link active fs-4 text" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active fs-6 text" href="pages/quienes-somos.html">Quienes somos</a>
+                <a class="enlacesNav nav-link active fs-4 text" href="pages/quienes-somos.html">Quienes somos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active fs-6 text" href="pages/que-usamos.html">Que usamos</a>
+                <a class="enlacesNav nav-link active fs-4 text" href="pages/que-usamos.html">Que usamos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active fs-6 text" href="pages/productos.html">Productos</a>
+                <a class="enlacesNav nav-link active fs-4 text" href="pages/productos.html">Productos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active fs-6 text" href="pages/contacto.html">Contacto</a>
+                <a class="enlacesNav nav-link active fs-4 text" href="pages/contacto.html">Contacto</a>
               </li>
             </ul>
           </div>
         </div>
-      </nav>
-   </header>
-   <main>
-       <section class="contenedor contenedorGrid">
-          <h1 class="titulo">Bienvenidos a Boulange</h1>
-          <article class="parrafo">
-            <p>
-               Somos un equipo de personas apasionadas por la panificación. Elaboramos todos los días panadería y pastelería artesanal, con harinas naturales y materia prima de la mejor calidad. Horneamos nuestros productos en un horno a leña que fue construido en el siglo XIX y remodelado en el siglo XXI. Somos lo mejor de ambos siglos. Somos tradición e innovación. Somos el lugar donde lo clásico se une con lo moderno. Somos  Boulange.
-            </p>
-          </article>
-          <article class="foto">
-              <img src="images/Panaderia.jpg" alt="panaderia" class="fotoPanes">
-          </article> 
-       </section>   
-   </main>
-   <footer class="abajoFooter">
-       <div class="contenedor footerBorde">
-           <div class="contenedorFooter">
-               <h2 class="subtituloFooter">Contacto</h2>
-               <p>boulange@boulange.com</p>
-               <p>379-15498566</p>
-           </div>
-           <div class="contenedorFooter">
-               <h2 class="subtituloFooter">Dirección</h2>
-               <p>Av. Siempre Viva 1234</p>
-           </div>
-           <div class="contenedorFooter">
-               <h2 class="subtituloFooter">Horarios</h2>
-               <p>Lunes a Domingo de 8 a 21hs</p>
-           </div>    
-       </div>
-       <div class="imagenesFooter">
-           <div class="facebook">
-                <img src="images/logo de facebook.png" alt="logo de fecebook" class="fotoFooter">
-           </div>
-           <div class="instagram">
-                <img src="images/logo de instagram.jpg" alt="logo de instagram" class="fotoFooter">
-           </div>
-       </div> 
-    </footer>
+    </nav>
+  </header>
+  <main>
+    <section class="mainIndex">
+      <article class="heroImage"> <!-- style="--hero-image: url('images/Panaderia.jpg'); --hero-attachment: fixed;" -->
+        <div class="heroImageCapa">
+          <h1 class="heroImageTitulo">
+            Bienvenidos <br> a Boulange
+          </h1>
+        </div>
+      </article>
+    </section>
+    <section class="mainIndex2">
+      <h2 class="tituloIndex">Innovación y tradición</h2>
+      <article class="articleIndex">
+        <p class="parrafoIndex">
+          Somos un equipo de personas apasionadas por la panificación. Elaboramos todos los días panadería y pastelería artesanal, con harinas naturales y materia prima demejo    calidad. Horneamos nuestros productos en un horno a leña que fue construido en el siglo XIX y remodelado en el siglo XXI. Somos lo mejor de ambos siglos.Somtradición     innovación. Somos el lugar donde lo clásico se une con lo moderno. Somos  Boulange.
+        </p>
+      </article>
+      <div class="cajaImagenIndex">
+        <img class="imagenIndex" src="images/cuadraDePan.jpg" alt="panaderia">
+      </div> 
+      <div class="cajaImagenIndex">
+        <img class="imagenIndex" src="images/tiendaDePan.jpg" alt="panaderia">
+      </div> 
+    </section>   
+  </main>
+  <footer>
+    <section class="footerTitulos">
+      <article>
+        <h3>Contacto</h3>
+        <p>boulange@boulange.com</p>
+        <p>379-1549856</p>
+      </article>
+      <article>
+        <h3>Dirección</h3>
+        <p>Av. Siempre Viva 1234</p>
+      </article>
+      <article>
+        <h3>Horarios</h3>
+        <p>Lunes a Domingo de 8 a 21hs</p>
+      </article>    
+    </section>
+    <section class="footerIconos">
+      <article>
+        <img src="images/facebook-svgrepo-com.svg" alt="logo de fecebook">
+      </article>
+      <article>
+        <img src="images/instagram-svgrepo-com.svg" alt="logo de instagram">
+      </article>
+      <article>
+        <img src="images/whatsapp-svgrepo-com.svg" alt="logo de whatsapp">
+      </article>
+    </section> 
+   </footer>
 <!-- link de JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
 </body>

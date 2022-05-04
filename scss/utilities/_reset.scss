@@ -1,9 +1,10 @@
 *{
-    margin: 0 auto; // para centrar toda la pagina */
+    margin: 0 auto; /* para centrar toda la pagina */
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none; // asi logro que todos los enlaces en el html dejen de tener subrayado */
-    list-style: none; // asi logro que todos los enlaces en el html dejen de tener viñetas */
-    max-width: 1024px; // para establecer el ancho máximo de toda la pagina */
+    text-decoration: none; /* asi logro que todos los enlaces en el html dejen de tener subrayado */
+    list-style: none; /* asi logro que todos los enlaces en el html dejen de tener viñetas */
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
 
 }

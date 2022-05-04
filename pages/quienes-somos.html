@@ -10,8 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@1,600&display=swap" rel="stylesheet">
     <!-- link animate.style -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- bootstrap -->
@@ -21,74 +19,76 @@
 </head>
 <body>
     <header>
-        <!-- barra de navegacion con el "logo de boulange adentro" -->
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-              <a class="logo animate__animated animate__rubberBand navbar-brand" href="../index.html">Boulange</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active fs-6 text" aria-current="page" href="../index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active fs-6 text" href="quienes-somos.html">Quienes somos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active fs-6 text" href="que-usamos.html">Que usamos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active fs-6 text" href="productos.html">Productos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active fs-6 text" href="contacto.html">Contacto</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+      <nav class="container-fluid navbar-expand-lg navbar-light fixed-lg-top">
+        <div class="row">
+          <a class="text-center animate__animated animate__rubberBand navbar-brand" href="../index.html"><img class="navLogo" src="../images/2.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item navItem">
+                <a class="enlacesNav nav-link active fs-4 text" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="enlacesNav nav-link active fs-4 text" href="./quienes-somos.html">Quienes somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="enlacesNav nav-link active fs-4 text" href="./que-usamos.html">Que usamos</a>
+              </li>
+              <li class="nav-item">
+                <a class="enlacesNav nav-link active fs-4 text" href="./productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="enlacesNav nav-link active fs-4 text" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
-    <main class="quienesSomos">
-        <h1 class="tituloQuienes">¿Quiénes somos?</h1>
-        <section class="parrafoQuienes centrado">
+    <main>
+        <h1>¿Quiénes somos?</h1>
+        <div>
             <p> Somos la tercera generación de una familia dedicada totalmente a la panadería. Nuestros abuelos vinieron desde Europa con un frasco con masa madre y una valija llena de sueños. Casi 80 años después, nuestras ganas de hacer pan sigue intacta, y nuestra masa madre más viva que nunca.
             </p>
-        </section>
-        <section class="fotoQuienes">
-            <img class="fotoEquipo" src="../images/quienes somos.jpeg" alt="equipo de panadería">
-        </section>
-        <section class="centrado videoQuienes">
-            <iframe class="videoEquipo" src="https://www.youtube.com/embed/_om7--IxCIY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </section>
-    </main>
-    <footer class="abajoFooter">
-        <div class="contenedor footerBorde">
-            <div class="contenedorFooter">
-                <h2 class="subtituloFooter">Contacto</h2>
-                <p>boulange@boulange.com</p>
-                <p>379-1549856</p>
-            </div>
-            <div class="contenedorFooter">
-                <h2 class="subtituloFooter">Dirección</h2>
-                <p>Av. Siempre Viva 1234</p>
-            </div>
-            <div class="contenedorFooter">
-                <h2 class="subtituloFooter">Horarios</h2>
-                <p>Lunes a Domingo de 8 a 21hs</p>
-            </div>    
         </div>
-        <div class="imagenesFooter">
-            <div class="facebook">
-                 <img src="../images/logo de facebook.png" alt="logo de fecebook" class="fotoFooter">
-            </div>
-            <div class="instagram">
-                 <img src="../images/logo de instagram.jpg" alt="logo de instagram" class="fotoFooter">
-            </div>
-        </div> 
+        <div>
+            <img src="../images/quienes somos.jpeg" alt="equipo de panadería">
+        </div>
+        <div>
+            <iframe src="https://www.youtube.com/embed/_om7--IxCIY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </main>
+    <footer>
+      <section class="footerTitulos">
+        <article>
+          <h3>Contacto</h3>
+          <p>boulange@boulange.com</p>
+          <p>379-1549856</p>
+        </article>
+        <article>
+          <h3>Dirección</h3>
+          <p>Av. Siempre Viva 1234</p>
+        </article>
+        <article>
+          <h3>Horarios</h3>
+          <p>Lunes a Domingo de 8 a 21hs</p>
+        </article>    
+      </section>
+      <section class="footerIconos">
+        <article>
+          <img src="../images/facebook-svgrepo-com.svg" alt="logo de fecebook">
+        </article>
+        <article>
+          <img src="../images/instagram-svgrepo-com.svg" alt="logo de instagram">
+        </article>
+        <article>
+          <img src="../images/whatsapp-svgrepo-com.svg" alt="logo de whatsapp">
+        </article>
+      </section> 
      </footer>
-<!-- link de JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>   
+  <!-- link de JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>   
 </body>
 </html>

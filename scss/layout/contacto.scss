@@ -1,0 +1,18 @@
+@import "../utilities/variables";
+@import "../utilities/mixin";
+
+.boton {
+    margin: 15px;
+    border-color: $colorPrincipal;
+    color: $colorPrincipal; }
+  
+  .widthDiv {
+    width: 400px;
+    text-align: center; }
+  
+  .centrado {
+    text-align: center; }
+  
+  .contacto {
+    display: flex;
+    flex-direction: column; }

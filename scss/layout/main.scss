@@ -1,0 +1,45 @@
+@import "../utilities/variables";
+@import "../utilities/mixin";
+
+main{
+    max-width: 1024px;
+    .mainIndex{
+        .heroImage{
+            background-image: url(../images/Panaderia.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            .heroImageCapa{
+                width: 100%;
+                min-height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                background-color: rgba(0, 0, 0, 0.75);
+                .heroImageTitulo{
+                    font-size: 7.5vw; /* para no tener que estar cambiando el tamaño de las letras con mediasqueries. Hay que ir probando...FLUID DISIGN. Trabajar sin medias queries */
+                    color: white;
+                }
+            }
+        }
+    }
+    .mainIndex2{
+        .tituloIndex{
+            @include h2Titulos;
+        }
+        .articleIndex{
+            @include cajaParrafosGral;
+            .parrafoIndex{
+                @include parrafosGral;
+            }
+        }
+        .cajaImagenIndex{
+            @include cajaImagenesGral;
+            .imagenIndex{
+                @include imagenesGral;
+            }
+        }
+    }
+}
