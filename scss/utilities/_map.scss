@@ -1,0 +1,12 @@
+//importacion de variables
+@import "../utilities/variables";
+
+$enviar: (
+    color-enviar: white,
+    bg-enviar: $colorPrincipal,
+);
+
+$borrar: (
+    color-borrar: $colorPrincipal,
+    bg-borrar: white,
+)

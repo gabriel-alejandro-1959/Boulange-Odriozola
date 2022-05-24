@@ -1,0 +1,48 @@
+@import "../utilities/variables";
+@import "../utilities/mixin";
+
+main{
+    max-width: 1024px;
+    .mainProductos{
+        .tituloProductos{
+           @include h2Titulos; 
+        }
+        .articleProductos{
+            @include cajaParrafosGral;
+            @media only screen and (max-width:991px){
+                flex-direction: column;
+            }
+            .subtituloProductos{
+                @include subtitulos;
+            }
+            .parrafoProductos{
+                @include parrafosGral;
+            }
+            .cajaImagenProductos{
+                @include cajaImagenesGral;
+                .imagenProductos{
+                    @include imagenesGral;
+                } 
+            }
+            @media only screen and (min-width:992px){
+                display: grid;
+                grid-template-areas: "subtituloProductos subtituloProductos"
+                                     "parrafoProductos divProductos";
+                grid-template-columns: 50% 50%;
+                
+                .subtituloProductos{
+                    grid-area: subtituloProductos;
+                    width: 80%;
+                }
+                .parrafoProductos{
+                    grid-area: parrafoProductos;
+                }
+                .divProductos{
+                    grid-area: divProductos;
+                    width: 80%;
+                }
+
+            }
+        }
+    }
+}

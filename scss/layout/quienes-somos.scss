@@ -1,0 +1,49 @@
+@import "../utilities/variables";
+@import "../utilities/mixin";
+
+main{
+    max-width: 1024px;
+    .mainQuienes{
+        .tituloQuienes{
+            @include h2Titulos;
+        }
+        .articleQuienes{
+            @include cajaParrafosGral;
+            .parrafoQuienes{
+                @include parrafosGral;
+            }
+        }
+        .cajaImagenQuienes{
+            @include cajaImagenesGral;
+            .imagenQuienes{
+                @include imagenesGral;
+            }
+        }
+        @media only screen and (min-width:992px){
+            display: grid;
+            grid-template-areas: "tituloQuienes tituloQuienes"
+                                 "articleQuienes divQuienes1"
+                                 "divQuienes2 divQuienes2";
+            grid-template-columns: 50% 50%;
+            
+
+            .tituloQuienes{
+                grid-area: tituloQuienes;
+                width: 80%;
+            }
+            .articleQuienes{
+                grid-area: articleQuienes;
+            }
+            .divQuienes1{
+                grid-area: divQuienes1;
+            }
+            .divQuienes2{
+                grid-area: divQuienes2;
+                width: 70%;
+                margin: auto;
+            }
+
+
+        }
+    }
+}

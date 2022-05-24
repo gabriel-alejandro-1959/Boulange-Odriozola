@@ -1,25 +1,18 @@
 {
-  "name": "boulange-odriozola-repositoriogit-git-iniciado-aca",
+  "name": "boulange",
   "version": "1.0.0",
-  "description": "",
+  "description": "pagina de boulange",
   "main": "index.js",
+  "dependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss scss/estilos.scss css/main.css",
-		"watch-css": "nodemon -e scss -x \"npm     run build-css\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gabriel-alejandro-1959/Boulange-Odriozola.git"
+    "build-css": "node-sass --include-path scss scss/style.scss css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/gabriel-alejandro-1959/Boulange-Odriozola/issues"
-  },
-  "homepage": "https://github.com/gabriel-alejandro-1959/Boulange-Odriozola#readme",
-  "devDependencies": {
-    "node-sass": "^7.0.1",
-    "nodemon": "^2.0.15"
-  }
+  "license": "ISC"
 }

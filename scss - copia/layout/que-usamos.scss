@@ -1,0 +1,41 @@
+@import "../utilities/variables";
+@import "../utilities/mixin";
+
+main{
+    max-width: 1024px;
+    .mainUsamos{
+        .tituloUsamos{
+           @include h2Titulos; 
+        }
+        .articleUsamos{
+            @include cajaParrafosGral;
+            flex-direction: column;
+            .parrafoUsamos{
+                @include parrafosGral;
+            }
+        }
+        .cajaImagenesUsamos{
+            @include cajaImagenesGral;
+            .imagenesUsamos{
+                @include imagenesGral;
+            }
+        }
+        @media only screen and (min-width:992px){
+            display: grid;
+            grid-template-areas: "tituloUsamos tituloUsamos"
+                                 "articleUsamos articleUsamos"
+                                 "divUsamos divUsamos";
+            grid-template-columns: 50% 50%;
+            .tituloUsamos{
+                grid-area: tituloUsamos;
+                width: 80vw;
+            }
+            .articleUsamos{
+                grid-area: articleUsamos;
+            }
+            .divUsamos{
+                grid-area: divUsamos;
+            }
+        }
+    }
+}
